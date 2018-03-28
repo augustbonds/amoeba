@@ -15,15 +15,23 @@ kt_register_toolchains()
 maven_jar(
     name = "junit_junit",
     artifact = "junit:junit:4.12",
-    repository = "maven_central",
-)
-
-maven_server(
-    name = "maven_central",
-    url = "http://repo1.maven.org/maven2/",
 )
 
 maven_server(
     name = "sics_releases",
-    url = "scpexe://kompics.i.sics.se/home/maven/repository",
+    url = "http://kompics.sics.se/maven/",
+)
+
+maven_jar(
+    name = "com_google_guava_guava",
+    artifact = "com.google.guava:guava:18.0",
+)
+
+maven_jar(
+    name = "log4j_log4j",
+    artifact = "log4j:log4j:1.2.17",
+)
+maven_jar(
+    name = "commons_logging_commons_logging",
+    artifact = "commons-logging:commons-logging:1.1.3",
 )
