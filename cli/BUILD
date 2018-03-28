@@ -5,6 +5,7 @@ kt_jvm_library(
     name = "cli",
     srcs = glob(["cli/**/*.kt"]),
     deps = [],
+    visibility = ["//logserver:__pkg__"]
 )
 
 kt_jvm_test(
