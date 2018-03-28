@@ -15,5 +15,15 @@ kt_register_toolchains()
 maven_jar(
     name = "junit_junit",
     artifact = "junit:junit:4.12",
+    repository = "maven_central",
 )
 
+maven_server(
+    name = "maven_central",
+    url = "http://repo1.maven.org/maven2/",
+)
+
+maven_server(
+    name = "sics_releases",
+    url = "scpexe://kompics.i.sics.se/home/maven/repository",
+)
