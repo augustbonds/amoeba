@@ -1,11 +1,3 @@
-# Created by https://www.gitignore.io/api/bazel
-
-### Bazel ###
-/bazel-*
-
-
-# End of https://www.gitignore.io/api/bazel
-
 
 # Created by https://www.gitignore.io/api/maven,intellij+iml
 

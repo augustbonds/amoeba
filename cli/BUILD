@@ -11,6 +11,7 @@ kt_jvm_library(
 kt_jvm_test(
     name = "cli-test",
     srcs = glob(["test/*.kt"]),
+    size = "small",
     deps = ["cli",
             "@com_github_jetbrains_kotlin//:kotlin-test",
             "@junit_junit//jar", 
