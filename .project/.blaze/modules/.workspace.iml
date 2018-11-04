@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../dalimplmysql" isTestSource="false" packagePrefix="com.augustbonds.dalimplmysql" />
       <sourceFolder url="file://$MODULE_DIR$/../../../dalimplmysql/test" isTestSource="false" packagePrefix="com.augustbonds.dalimplmysql" />
       <sourceFolder url="file://$MODULE_DIR$/../../../hops-metadata-dal/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../keyboardpiano/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../logserver" isTestSource="false" packagePrefix="com.augustbonds.logserver" />
       <sourceFolder url="file://$MODULE_DIR$/../../../sdk/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../sdk/src/test/java" isTestSource="false" />
@@ -19,23 +20,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="cli-test_f99d9601" level="project" />
     <orderEntry type="library" name="kotlin-test_b9131a" level="project" />
-    <orderEntry type="library" name="junit-platform-suite-api-1.2.0-ijar_9e390310" level="project" />
-    <orderEntry type="library" name="kotlin-stdlib-jdk7_b9131a" level="project" />
-    <orderEntry type="library" name="kotlin-stdlib-jdk8_b9131a" level="project" />
-    <orderEntry type="library" name="junit-jupiter-params-5.2.0-ijar_1fd67c5c" level="project" />
-    <orderEntry type="library" name="log4j-1.2.17-ijar_3d93f1f0" level="project" />
-    <orderEntry type="library" name="junit-jupiter-api-5.2.0-ijar_f0861570" level="project" />
-    <orderEntry type="library" name="kotlin-stdlib_b9131a" level="project" />
-    <orderEntry type="library" name="TestRunner_deploy_520a8188" level="project" />
+    <orderEntry type="library" name="cli_f99d9601" level="project" />
     <orderEntry type="library" name="junit-4.12-ijar_a89188f0" level="project" />
     <orderEntry type="library" name="commons-logging-1.1.3-ijar_61972570" level="project" />
     <orderEntry type="library" name="junit-jupiter-api-5.2.0-ijar_f8773812" level="project" />
     <orderEntry type="library" name="apiguardian-api-1.0.0-ijar_cf6deeb0" level="project" />
-    <orderEntry type="library" name="opentest4j-1.1.0-ijar_4ec1fa50" level="project" />
-    <orderEntry type="library" name="junit-jupiter-engine-5.2.0-ijar_fa60a0d4" level="project" />
+    <orderEntry type="library" name="kotlin-stdlib-jdk7_b9131a" level="project" />
+    <orderEntry type="library" name="kotlin-stdlib-jdk8_b9131a" level="project" />
+    <orderEntry type="library" name="log4j-1.2.17-ijar_3d93f1f0" level="project" />
     <orderEntry type="library" name="guava-18.0-ijar_bb8d2df8" level="project" />
-    <orderEntry type="library" name="cli-test_f99d9601" level="project" />
-    <orderEntry type="library" name="cli_f99d9601" level="project" />
+    <orderEntry type="library" name="kotlin-stdlib_b9131a" level="project" />
+    <orderEntry type="library" name="TestRunner_deploy_520a8188" level="project" />
   </component>
 </module>
