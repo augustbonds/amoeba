@@ -1,7 +1,7 @@
 java_library(
     name = "dalimplmysql",
     srcs = glob(["dalimplmysql/**/*.java"]),
-    deps = ["//hops-metadata-dal:hops_metadata_dal"],
+    deps = ["//hopsmetadatadal"],
 )
 
 java_test(
@@ -9,5 +9,5 @@ java_test(
     size = "small",
     srcs = glob(["test/*.java"]),
     test_class = "com.augustbonds.dalimplmysql.Tests",
-    deps = ["@junit_junit//jar", "//hops-metadata-dal:hops_metadata_dal", ":dalimplmysql"],
+    deps = ["@junit_junit//jar", "//hopsmetadatadal", ":dalimplmysql"],
 )
