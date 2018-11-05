@@ -14,9 +14,9 @@ kt_register_toolchains()
 
 load(":junit5.bzl", "junit_jupiter_java_repositories", "junit_platform_java_repositories")
 
-JUNIT_JUPITER_VERSION = "5.2.0"
+JUNIT_JUPITER_VERSION = "5.3.1"
 
-JUNIT_PLATFORM_VERSION = "1.2.0"
+JUNIT_PLATFORM_VERSION = "1.3.1"
 
 junit_jupiter_java_repositories(
     version = JUNIT_JUPITER_VERSION,

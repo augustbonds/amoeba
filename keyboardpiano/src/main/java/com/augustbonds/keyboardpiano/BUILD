@@ -1,5 +1,5 @@
 java_binary(
-    name = "keyboardpiano-playable",
+    name = "keyboardpiano",
     srcs = ["Main.java"],
     main_class = "com.augustbonds.keyboardpiano.Main",
     deps = [
