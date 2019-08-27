@@ -1,18 +1,18 @@
-rules_kotlin_version = "67f4a6050584730ebae7f8a40435a209f8e0b48e"
-kotlin_release_version="1.2.30"
-
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
+rules_kotlin_version = "legacy-modded-0_26_1-02"
+rules_kotlin_sha = "245d0bc1511048aaf82afd0fa8a83e8c3b5afdff0ae4fbcae25e03bb2c6f1a1a"
 http_archive(
     name = "io_bazel_rules_kotlin",
-    urls = ["https://github.com/bazelbuild/rules_kotlin/archive/%s.zip" % rules_kotlin_version],
+    urls = ["https://github.com/cgruber/rules_kotlin/archive/%s.zip" % rules_kotlin_version],
     type = "zip",
-    strip_prefix = "rules_kotlin-%s" % rules_kotlin_version
+    strip_prefix = "rules_kotlin-%s" % rules_kotlin_version,
+    sha256 = rules_kotlin_sha,
 )
 
 load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kotlin_repositories", "kt_register_toolchains")
-kotlin_repositories(kotlin_release_version=kotlin_release_version)
-kt_register_toolchains()
+kotlin_repositories() # if you want the default. Otherwise see custom kotlinc distribution below
+kt_register_toolchains() # to use the default toolchain, otherwise see toolchains below
 
 load(":junit5.bzl", "junit_jupiter_java_repositories", "junit_platform_java_repositories")
 

@@ -1,0 +1,3 @@
+[submodule "hops-metadata-dal"]
+	path = hops-metadata-dal
+	url = https://github.com/hopshadoop/hops-metadata-dal.git
