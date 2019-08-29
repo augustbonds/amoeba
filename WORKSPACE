@@ -57,3 +57,28 @@ maven_jar(
     name = "commons_logging_commons_logging",
     artifact = "commons-logging:commons-logging:1.1.3",
 )
+
+android_sdk_repository(name = "androidsdk")
+
+RULES_JVM_EXTERNAL_TAG = "2.2"
+http_archive(
+    name = "rules_jvm_external",
+    strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
+    url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % RULES_JVM_EXTERNAL_TAG,
+    sha256 = "f1203ce04e232ab6fdd81897cf0ff76f2c04c0741424d192f28e65ae752ce2d6",
+)
+load("@rules_jvm_external//:defs.bzl", "maven_install")
+
+maven_install(
+    artifacts = [
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50",
+        "com.android.support.constraint:constraint-layout:1.1.3",
+        "androidx.work:work-runtime-ktx:2.2.0",
+        "junit:junit:4.12",
+        "com.android.support.test.espresso:espresso-core:3.0.2",
+    ],
+    repositories = [
+        "https://maven.google.com",
+        "https://repo1.maven.org/maven2",
+    ],
+)
