@@ -1,3 +1,6 @@
 [submodule "hops-metadata-dal"]
 	path = hops-metadata-dal
 	url = https://github.com/hopshadoop/hops-metadata-dal.git
+[submodule "MomentsOfJoy"]
+	path = MomentsOfJoy
+	url = git@github.com:augustbonds/MomentsOfJoy.git
