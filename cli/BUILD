@@ -14,7 +14,7 @@ kt_jvm_test(
     size = "small",
     deps = ["cli",
             "@com_github_jetbrains_kotlin//:kotlin-test",
-            "@junit_junit//jar", 
+            "@maven//:junit_junit",
            ],
     test_class = "com.augustbonds.cli.test.TestCommands",
 )

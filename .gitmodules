@@ -4,3 +4,6 @@
 [submodule "MomentsOfJoy"]
 	path = MomentsOfJoy
 	url = git@github.com:augustbonds/MomentsOfJoy.git
+[submodule "foundation"]
+	path = foundation
+	url = git@github.com:augustbonds/foundation.git

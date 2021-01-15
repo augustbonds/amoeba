@@ -9,5 +9,5 @@ java_test(
     size = "small",
     srcs = glob(["src/test/java/com/augustbonds/dalimplmysql/dalimplmysql/**/*.java"]),
     test_class = "com.augustbonds.dalimplmysql.dalimplmysql.Tests",
-    deps = ["@junit_junit//jar", "//hops-metadata-dal", ":dalimplmysql"],
+  deps = ["@maven//:junit_junit", "//hops-metadata-dal", ":dalimplmysql"],
 )

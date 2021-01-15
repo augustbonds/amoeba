@@ -1,7 +1,6 @@
 package com.augustbonds.keyboardpiano;
 
 import com.augustbonds.foundation.Dictionary;
-import com.augustbonds.logging.Logger;
 
 import javax.sound.midi.*;
 import javax.swing.*;
@@ -44,12 +43,12 @@ public class Main {
                     startNote(note);
                     beingPlayed.add(note);
                 }
-                Logger.info("Key pressed: " + e.getKeyChar());
+                System.out.println("Key pressed: " + e.getKeyChar());
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-                Logger.info("Key released: " + e.getKeyChar());
+                System.out.println("Key released: " + e.getKeyChar());
                 Notes note = KEYS_TO_NOTES.get(e.getKeyChar());
 
                 stopNote(note);
